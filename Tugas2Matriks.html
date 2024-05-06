@@ -42,7 +42,7 @@
   <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas2Matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -175,12 +177,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-</ul>
-
+        
     </div>
 </nav></div>
     </div>
@@ -386,7 +383,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Aljabar matriks</p>
+  <p>#<strong>Aljabar matriks</strong></p>
 <ol class="arabic simple">
 <li><p>penjelasan tentang matriks</p></li>
 <li><p>operasi matriks</p></li>
@@ -449,8 +446,35 @@ document.write(`
 <p>#Penjelasan Matrik</p>
 <p>Matriks adalah sekumpulan bilangan yang disusun berdasarkan baris dan kolom, serta ditempatkan di dalam tanda kurung berupa kurung biasa “( )” atau kurung siku “[ ]”. Suatu matriks diberi nama dengan huruf kapital, seperti A, B, C,dll dan suatu susunan bilangan real atau bilangan kompleks (atau elemen-elemen) yang disusun dalam baris dan kolom sehingga membentuk jajaran persegi panjang.</p>
 <p>Ordo dan Elemen Matriks</p>
-<p>Matriks itu punya ukuran. Ukuran matriks disebut ordo. Ordo matriks ini berdasarkan dari banyaknya baris dikali banyaknya kolom pada matriks. Jadi, kalo suatu matriks A memiliki m baris dan n kolom, maka matriks A tersebut berukuran (berordo) m x n. Supaya lebih sederhana, kita bisa menulisnya dengan Amxn.</p>
+<p>Matriks itu punya ukuran. Ukuran matriks disebut ordo. Ordo matriks ini berdasarkan dari banyaknya baris dikali banyaknya kolom pada matriks.Ordo matriks merupakan banyaknya baris dan kolom yang terdapat pada suatu matriks. Bentuk umumnya adalah sebagai berikut mxn.Ordo matriks pada matriks  adalah 3x3, yakni terdiri dari 3 baris dan 3 kolom.</p>
 <p>masing-masing bilangan yang terdapat di dalam matriks disebut elemen matriks.  matriks dinotasikan dengan huruf kapital, maka elemen-elemen matriks dinotasikan dengan huruf kecil dan diberi indeks yang menyatakan letak baris dan kolomnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">sy</span>
+<span class="n">a</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 2 3]
+ [3 4 3]
+ [5 5 6]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+A=
+\begin{bmatrix}
+1&amp;2&amp;3\\
+3&amp;4&amp;3\\5&amp;5&amp;6
+\end{bmatrix}
+\end{equation*}
+\end{split}\]</div>
 <p>#OPERASI PADA MATRIKS</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -486,6 +510,30 @@ C=
 </div>
 </div>
 </div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+A=
+\begin{bmatrix}
+1&amp;0&amp;2\\
+2&amp;0&amp;4\\
+4&amp;6&amp;8
+\end{bmatrix}
+&amp;&amp;
+B=
+\begin{bmatrix}
+2&amp;3&amp;4\\
+4&amp;5&amp;6\\1&amp;2&amp;4
+\end{bmatrix}
+&amp;&amp;
+C=
+\begin{bmatrix}
+2&amp;3\\
+4&amp;5\\
+6&amp;7
+\end{bmatrix}
+\end{align*}
+\end{split}\]</div>
 <ol class="arabic simple">
 <li><p>Penjumlahan Matrik</p></li>
 </ol>
@@ -515,6 +563,25 @@ sifat di atas merupakan sifat komunitatif karena A+B = B+A
 </div>
 </div>
 </div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+A+B=
+\begin{bmatrix}
+3&amp;3&amp;6\\
+6&amp;5&amp;10\\
+5&amp;8&amp;12
+\end{bmatrix}
+&amp;&amp;
+B+A=
+\begin{bmatrix}
+3&amp;3&amp;6\\
+6&amp;5&amp;10\\
+5&amp;8&amp;12
+\end{bmatrix}
+\end{align*}
+\end{split}\]</div>
+<p>sifat di atas merupakan sifat komutatif karena A+B = B+A</p>
 <p>2.Pengurangan matrik</p>
 <p>Defenisi: selisih A-B adalah matriks
 yang diperoleh dengan mengurangkan elemen-elemen A dengan elemen-elemen B
@@ -541,6 +608,22 @@ sifat di atas merupakan sifat komutatif karena A-B = B-A
 </div>
 </div>
 </div>
+<p>\begin{align*}
+A-B=
+\begin{bmatrix}
+-1&amp;-3&amp;-2\
+-2&amp;-5&amp;-2\
+3&amp;4&amp;4
+\end{bmatrix}
+&amp;&amp;
+B-A=
+\begin{bmatrix}
+1&amp;3&amp;2\
+2&amp;5&amp;2\
+-3&amp;-4&amp;-4
+\end{bmatrix}
+\end{align*}</p>
+<p>sifat di atas merupakan sifat komutatif karena A-B = B-A</p>
 <p>3.Perkalian Matriks</p>
 <p>Definisi: Perkalian matriks sendiri adalah proses mengalikan setiap elemen baris pada matriks pertama dengan elemen kolom pada matriks kedua. Hasilnya kemudian dijumlahkan untuk memperoleh hasil akhir perkalian matriks atau Kalikan elemen-elemen yang bersesuaian dari
 baris dan kolom secara bersama-sama dan kemudian jumlahkan hasil kalinya.</p>
@@ -569,9 +652,35 @@ BC=
 </div>
 </div>
 </div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+AB=
+\begin{bmatrix}
+4&amp;7&amp;12\\
+8&amp;14&amp;24\\
+40&amp;58&amp;84
+\end{bmatrix}
+&amp;&amp;
+AC=
+\begin{bmatrix}
+14&amp;17\\
+28&amp;34\\
+80&amp;98
+\end{bmatrix}
+&amp;&amp;
+BC=
+\begin{bmatrix}
+40&amp;49\\
+64&amp;79\\
+34&amp;41
+\end{bmatrix}
+\end{align*}
+\end{split}\]</div>
 <ul class="simple">
 <li><p>Sifat Asosiasi:</p></li>
 </ul>
+<p>sifat asosiatif adalah kondisi ketika operasi hitung tiga angka atau lebih, hasilnya tidak bergantung pada pengelompokan dari angka yang dioperasikan.</p>
 <p>(AB)C = A(BC)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -593,9 +702,23 @@ BC=
 </div>
 </div>
 </div>
+<p>\begin{equation*}
+A(BC)=
+\begin{bmatrix}
+108&amp;131\
+216&amp;262\816&amp;998
+\end{bmatrix}
+(AB)C=
+\begin{bmatrix}
+108&amp;131\
+216&amp;262\
+816&amp;998
+\end{bmatrix}
+\end{equation*}</p>
 <ul class="simple">
 <li><p>perkalian skalar</p></li>
 </ul>
+<p>proses mengalikan suatu matriks dengan skalar. Misalkan ‘A’ adalah matriks dan ‘c’ adalah skalar (bilangan real).</p>
 <p>c(AB) = (cA)B = A(cB)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -623,9 +746,29 @@ A(cB)
 </div>
 </div>
 </div>
+<p>\begin{equation*}
+c(AB)=
+\begin{bmatrix}
+12&amp;21&amp;36\
+24&amp;42&amp;72\120&amp;174&amp;252
+\end{bmatrix}
+(cA)B=
+\begin{bmatrix}
+12&amp;21&amp;36\
+24&amp;42&amp;72\
+120&amp;174&amp;252
+\end{bmatrix}
+A(cB)=
+\begin{bmatrix}
+12&amp;21&amp;36\
+24&amp;42&amp;72\
+120&amp;174&amp;252
+\end{bmatrix}
+\end{equation*}</p>
 <ul class="simple">
 <li><p>perkalian identitas</p></li>
 </ul>
+<p>matriks persegi yang setiap elemen diagonal utamanya bernilai 1 dan elemen lainnya bernilai 0.</p>
 <p>AI = IA = A</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -653,11 +796,33 @@ A=
 </div>
 </div>
 </div>
-<ul>
-<li><p>tidak berlaku sifat kumutatif</p>
-<p>AB != BA atau AB tidak sama dengan BA</p>
-</li>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+AI=
+\begin{bmatrix}
+1&amp;0&amp;2\\
+2&amp;0&amp;4\\4&amp;6&amp;8
+\end{bmatrix}
+IA=
+\begin{bmatrix}
+1&amp;0&amp;2\\
+2&amp;0&amp;4\\
+4&amp;6&amp;8
+\end{bmatrix}
+A=
+\begin{bmatrix}
+1&amp;0&amp;2\\
+2&amp;0&amp;4\\
+4&amp;6&amp;8
+\end{bmatrix}
+\end{equation*}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>tidak berlaku sifat kumutatif</p></li>
 </ul>
+<p>Sifat komutatif perkalian menyatakan bahwa meskipun urutan bilangan diubah, hasil kali dua bilangan bulat atau lebih tetap sama.</p>
+<p>AB != BA atau AB tidak sama dengan BA</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;AB=</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">a</span><span class="nd">@b</span><span class="p">)</span>
