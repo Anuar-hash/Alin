@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Kofaktor Matriks &#8212; My sample book</title>
+    <title>Determinan &#8212; My sample book</title>
   
   
   
@@ -176,7 +176,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kofaktor Matriks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Determinan</a></li>
+
+
+
 
 
 
@@ -365,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Kofaktor Matriks</h1>
+    <h1>Determinan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -375,7 +378,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Kofaktor Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Determinan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-mencari-determinan-matriks">Syarat mencari determinan matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-determinan">Sifat sifat determinan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">Kofaktor Matriks</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-kofaktor-determinan-dan-invers-suatu-matriks">Menghitung Kofaktor, Determinan dan Invers suatu matriks</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-dengan-ekspansi-kolom-kofaktor">Determinan dengan Ekspansi Kolom Kofaktor</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
@@ -391,7 +397,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#<strong>Determinan</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="determinan">
+<h1>Determinan<a class="headerlink" href="#determinan" title="Link to this heading">#</a></h1>
 <p>Determinan adalah suatu bilangan real yang diperoleh dari suatu proses dengan aturan tertentu terhadap matriks bujur sangkar
 . Secara lebih umum, determinan merupakan nilai skalar yang hanya memiliki besaran atau nilai, yang dihitung dari unsur-unsur suatu matriks persegi
 . Dalam matematika, determinan adalah sebuah fungsi tertentu yang menghubungkan suatu bilangan real dengan suatu matriks bujur sangkar
@@ -401,7 +408,9 @@ document.write(`
 <p>Dalam konteks matriks, determinan juga dapat dihitung dengan menggunakan metode ekspansi kofaktor baris pertama
 . Jika nilai determinan suatu matriks bujur sangkar adalah 0, maka matriks tersebut disebut singular, yang berarti matriks tersebut tidak memiliki invers. Sebaliknya, jika nilai determinan matriks bujur sangkar tidak sama dengan 0, maka matriks tersebut disebut nonsingular, yang artinya matriks tersebut memiliki invers
 .</p>
-<p>#<strong>Syarat mencari determinan matriks</strong></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="syarat-mencari-determinan-matriks">
+<h1>Syarat mencari determinan matriks<a class="headerlink" href="#syarat-mencari-determinan-matriks" title="Link to this heading">#</a></h1>
 <p>Determinan dari suatu matriks dapat dihitung dengan beberapa syarat yang perlu dipenuhi. Berikut adalah beberapa syarat umum untuk mencari determinan matriks:</p>
 <p>Matriks Persegi: Determinan hanya dapat dihitung untuk matriks yang merupakan matriks persegi, yaitu matriks yang memiliki jumlah baris sama dengan jumlah kolomnya
 .
@@ -412,7 +421,9 @@ Metode Perhitungan: Terdapat beberapa metode untuk menghitung determinan matriks
 Matriks Invers: Determinan matriks juga berkaitan dengan matriks invers. Misalnya, jika suatu matriks bujur sangkar A dikalikan terhadap inversnya yaitu matriks bujur sangkar A1, maka menghasilkan matriks identitas pada operasi perkalian matriks
 .</p>
 <p>Dengan memenuhi syarat-syarat tersebut, determinan matriks dapat dihitung sesuai dengan rumus dan metode yang berlaku untuk matriks tersebut.</p>
-<p>#<strong>Sifat sifat determinan</strong></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sifat-sifat-determinan">
+<h1>Sifat sifat determinan<a class="headerlink" href="#sifat-sifat-determinan" title="Link to this heading">#</a></h1>
 <p>Determinan merupakan suatu nilai yang terkait dengan matriks dan memiliki beberapa sifat yang penting dalam matematika. Beberapa sifat-sifat determinan yang perlu diketahui antara lain:</p>
 <ol class="arabic simple">
 <li><p>Sifat Determinan Matriks Identitas:</p></li>
@@ -752,6 +763,7 @@ Determinan Matrix S =
 </div>
 </div>
 </div>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="kofaktor-matriks">
 <h1>Kofaktor Matriks<a class="headerlink" href="#kofaktor-matriks" title="Link to this heading">#</a></h1>
 </section>
@@ -900,9 +912,8 @@ Invers Matriks A:
 [5 4 5 6 4]
 
 Determinan dari matriks A: 423.0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Invers Matriks A:
+
+Invers Matriks A:
 [[ 0.14 -0.65 -0.46  0.39  0.5 ]
  [-0.23 -0.31 -0.47  0.31  0.64]
  [ 0.19  0.92  0.85 -0.4  -1.27]
@@ -969,7 +980,10 @@ Determinan dari matriks A: 423.0
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Kofaktor Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Determinan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-mencari-determinan-matriks">Syarat mencari determinan matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-determinan">Sifat sifat determinan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">Kofaktor Matriks</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-kofaktor-determinan-dan-invers-suatu-matriks">Menghitung Kofaktor, Determinan dan Invers suatu matriks</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-dengan-ekspansi-kolom-kofaktor">Determinan dengan Ekspansi Kolom Kofaktor</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
