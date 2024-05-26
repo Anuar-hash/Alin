@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Invers matrik &#8212; My sample book</title>
   
   
   
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -63,7 +63,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Determinan" href="Tugas4determinan.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Tugas2Matriks.html" />
+    <link rel="prev" title="Aljabar matriks" href="Tugas2Matriks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,7 +178,21 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Tugas1Sistemlinear.html">Menggambarkan persamaan bidang dalam 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas2Matriks.html">Aljabar matriks</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Invers matrik</a></li>
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="Tugas4determinan.html">Determinan</a></li>
 
 
@@ -371,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Invers matrik</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,7 +394,12 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Invers matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-invers-matrik">Penjelasan invers Matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-invers-matrik">Sifat-sifat Invers matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-invers-matriks-gauss-jordan-elimination">Mencari Invers Matriks (gauss jordan elimination)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-eliminasi-persamaan-linier-membuat-contoh-soal-persamaan-6-variabel">Solusi eliminasi persamaan linier (membuat contoh soal persamaan 6 variabel)</a></li>
 </ul>
 
             </nav>
@@ -393,10 +412,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Invers matrik</p>
-<p>##Penjelasan invers Matrik</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="invers-matrik">
+<h1>Invers matrik<a class="headerlink" href="#invers-matrik" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="penjelasan-invers-matrik">
+<h1>Penjelasan invers Matrik<a class="headerlink" href="#penjelasan-invers-matrik" title="Link to this heading">#</a></h1>
 <p>Invers matriks adalah kebalikan (invers) dari sebuah matriks yang apabila matriks tersebut dikalikan dengan inversnya, akan menjadi matriks identitas. Invers matriks dilambangkan dengan A-1. Suatu matriks dikatakan memiliki invers jika determinan dari matriks tersebut tidak sama dengan nol.</p>
-<p>#Sifat-sifat Invers matrik</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sifat-sifat-invers-matrik">
+<h1>Sifat-sifat Invers matrik<a class="headerlink" href="#sifat-sifat-invers-matrik" title="Link to this heading">#</a></h1>
 <p>Beberapa sifat-sifat invers matriks adalah sebagai berikut:</p>
 <ol class="arabic simple">
 <li><p>Invers matriks hanya ada untuk matriks persegi, yaitu matriks yang memiliki jumlah baris dan kolom yang sama.</p></li>
@@ -405,7 +429,9 @@ document.write(`
 <li><p>Invers dari invers suatu matriks adalah matriks itu sendiri. Jika B adalah invers dari A, maka invers dari B adalah A. Dapat ditulis (A^−1)^−1 = A.</p></li>
 <li><p>Invers dari hasil kali dua atau lebih matriks adalah hasil kali invers-inversnya dalam urutan terbalik. Jika A dan B keduanya nonsingular, maka (AB)^−1 = B^−1 A^−1.6. Invers dari transpos suatu matriks adalah transpos dari inversnya.Transpos adalah operasi menukar baris dan kolom suatu matriks. Jika A nonsingular, maka (A^T)^−1 = (A^−1)^T.</p></li>
 </ol>
-<p>##Mencari Invers Matriks (gauss jordan elimination)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="mencari-invers-matriks-gauss-jordan-elimination">
+<h1>Mencari Invers Matriks (gauss jordan elimination)<a class="headerlink" href="#mencari-invers-matriks-gauss-jordan-elimination" title="Link to this heading">#</a></h1>
 <p>Misalkan <span class="math notranslate nohighlight">\(A\)</span> adalah matriks awal yang ingin kita inverskan. Proses eliminasi Gauss-Jordan akan menghasilkan matriks identitas di sebelah kiri matriks <span class="math notranslate nohighlight">\(A\)</span>, dan invers dari <span class="math notranslate nohighlight">\(A\)</span> di sebelah kanan matriks identitas.</p>
 <p>[ A ,|, I ] =
 \begin{bmatrix}
@@ -467,7 +493,9 @@ b. Bagi baris i dengan elemen diagonal untuk membuat elemen diagonal menjadi 1.
 c. Untuk setiap baris j ≠ i, kurangkan baris i yang telah diubah dari baris j, dikalikan dengan faktor yang membuat A[j][i] menjadi 0.</p></li>
 <li><p>Setelah iterasi selesai, matriks kiri harus menjadi matriks identitas, dan matriks kanan akan menjadi invers dari matriks awal A.</p></li>
 </ol>
-<p>#Solusi eliminasi persamaan linier (membuat contoh soal persamaan 6 variabel)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="solusi-eliminasi-persamaan-linier-membuat-contoh-soal-persamaan-6-variabel">
+<h1>Solusi eliminasi persamaan linier (membuat contoh soal persamaan 6 variabel)<a class="headerlink" href="#solusi-eliminasi-persamaan-linier-membuat-contoh-soal-persamaan-6-variabel" title="Link to this heading">#</a></h1>
 <p>Misalkan kita memiliki sistem persamaan linier berikut:</p>
 <p>\begin{cases}
 2x_1 + 3x_2 - 4x_3 + 5x_4 - 6x_5 + 7x_6 &amp;= 10 \
@@ -496,6 +524,7 @@ c. Untuk setiap baris j ≠ i, kurangkan baris i yang telah diubah dari baris j,
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 6 \
 \end{array} <br />
 Jadi, solusi sistem persamaan linier adalah <span class="math notranslate nohighlight">\(x_1 = 1\)</span>, <span class="math notranslate nohighlight">\(x_2 = 2\)</span>, <span class="math notranslate nohighlight">\(x_3 = 3\)</span>, <span class="math notranslate nohighlight">\(x_4 = 4\)</span>, <span class="math notranslate nohighlight">\(x_5 = 5\)</span>, dan <span class="math notranslate nohighlight">\(x_6 = 6\)</span>.</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -533,7 +562,7 @@ Jadi, solusi sistem persamaan linier adalah <span class="math notranslate nohigh
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Aljabar matriks</p>
       </div>
     </a>
     <a class="right-next"
@@ -560,7 +589,12 @@ Jadi, solusi sistem persamaan linier adalah <span class="math notranslate nohigh
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Invers matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-invers-matrik">Penjelasan invers Matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-invers-matrik">Sifat-sifat Invers matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-invers-matriks-gauss-jordan-elimination">Mencari Invers Matriks (gauss jordan elimination)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-eliminasi-persamaan-linier-membuat-contoh-soal-persamaan-6-variabel">Solusi eliminasi persamaan linier (membuat contoh soal persamaan 6 variabel)</a></li>
 </ul>
 
   </nav></div>

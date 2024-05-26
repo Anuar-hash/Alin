@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Aljabar matriks &#8212; My sample book</title>
   
   
   
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -62,8 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas2Matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Tugas3Matrik-invers.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Tugas1Sistemlinear.html" />
+    <link rel="next" title="Invers matrik" href="Tugas3Matrik-invers.html" />
+    <link rel="prev" title="Menggambarkan persamaan bidang dalam 3D" href="Tugas1Sistemlinear.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,7 +178,21 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Tugas1Sistemlinear.html">Menggambarkan persamaan bidang dalam 3D</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Aljabar matriks</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Tugas3Matrik-invers.html">Invers matrik</a></li>
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="Tugas4determinan.html">Determinan</a></li>
 
 
@@ -371,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Aljabar matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,7 +394,15 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aljabar matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-matrik">Penjelasan Matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks">OPERASI PADA MATRIKS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matrik">1. Penjumlahan Matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matrik">2.Pengurangan matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">3.Perkalian Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">4. transpose matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#program-untuk-mengalikan-matriks">program untuk mengalikan matriks</a></li>
 </ul>
 
             </nav>
@@ -393,7 +415,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#<strong>Aljabar matriks</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="aljabar-matriks">
+<h1>Aljabar matriks<a class="headerlink" href="#aljabar-matriks" title="Link to this heading">#</a></h1>
 <ol class="arabic simple">
 <li><p>penjelasan tentang matriks</p></li>
 <li><p>operasi matriks</p></li>
@@ -453,7 +476,9 @@ document.write(`
 </div>
 </div>
 </div>
-<p>#Penjelasan Matrik</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="penjelasan-matrik">
+<h1>Penjelasan Matrik<a class="headerlink" href="#penjelasan-matrik" title="Link to this heading">#</a></h1>
 <p>Matriks adalah sekumpulan bilangan yang disusun berdasarkan baris dan kolom, serta ditempatkan di dalam tanda kurung berupa kurung biasa “( )” atau kurung siku “[ ]”. Suatu matriks diberi nama dengan huruf kapital, seperti A, B, C,dll dan suatu susunan bilangan real atau bilangan kompleks (atau elemen-elemen) yang disusun dalam baris dan kolom sehingga membentuk jajaran persegi panjang.</p>
 <p>Ordo dan Elemen Matriks</p>
 <p>Matriks itu punya ukuran. Ukuran matriks disebut ordo. Ordo matriks ini berdasarkan dari banyaknya baris dikali banyaknya kolom pada matriks.Ordo matriks merupakan banyaknya baris dan kolom yang terdapat pada suatu matriks. Bentuk umumnya adalah sebagai berikut mxn.Ordo matriks pada matriks  adalah 3x3, yakni terdiri dari 3 baris dan 3 kolom.</p>
@@ -485,7 +510,13 @@ A=
 \end{bmatrix}
 \end{equation*}
 \end{split}\]</div>
-<p>#OPERASI PADA MATRIKS</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="operasi-pada-matriks">
+<h1>OPERASI PADA MATRIKS<a class="headerlink" href="#operasi-pada-matriks" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>List item</p></li>
+<li><p>List item</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#A dan B= 3X3</span>
@@ -544,9 +575,9 @@ C=
 \end{bmatrix}
 \end{align*}
 \end{split}\]</div>
-<ol class="arabic simple">
-<li><p>Penjumlahan Matrik</p></li>
-</ol>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="penjumlahan-matrik">
+<h1>1. Penjumlahan Matrik<a class="headerlink" href="#penjumlahan-matrik" title="Link to this heading">#</a></h1>
 <p>Definisi: jika A dan B adalah matriks-matriks berukuran (berdimensi) sama, maka
 jumlah A+B adalah matriks yang diperoleh dengan menambahkan elemen-elemen A
 dengan elemen-elemen B yang letaknya bersesuaian.
@@ -592,7 +623,9 @@ B+A=
 \end{align*}
 \end{split}\]</div>
 <p>sifat di atas merupakan sifat komutatif karena A+B = B+A</p>
-<p>2.Pengurangan matrik</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pengurangan-matrik">
+<h1>2.Pengurangan matrik<a class="headerlink" href="#pengurangan-matrik" title="Link to this heading">#</a></h1>
 <p>Defenisi: selisih A-B adalah matriks
 yang diperoleh dengan mengurangkan elemen-elemen A dengan elemen-elemen B
 yang letaknya bersesuaian. Pengurangan matrik memiliki konsep yang sama dengan penjumlahan. Dua buah matriks dapat dikurangkan apabila keduanya memiliki ordo yang sama.</p>
@@ -634,7 +667,9 @@ B-A=
 \end{bmatrix}
 \end{align*}</p>
 <p>sifat di atas merupakan sifat komutatif karena A-B = B-A</p>
-<p>3.Perkalian Matriks</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="perkalian-matriks">
+<h1>3.Perkalian Matriks<a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h1>
 <p>Definisi: Perkalian matriks sendiri adalah proses mengalikan setiap elemen baris pada matriks pertama dengan elemen kolom pada matriks kedua. Hasilnya kemudian dijumlahkan untuk memperoleh hasil akhir perkalian matriks atau Kalikan elemen-elemen yang bersesuaian dari
 baris dan kolom secara bersama-sama dan kemudian jumlahkan hasil kalinya.</p>
 <div class="cell docutils container">
@@ -868,7 +903,9 @@ BA=
 21&amp;24&amp;76
 \end{bmatrix}
 \end{align*}</p>
-<p>##4. transpose matriks</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="transpose-matriks">
+<h1>4. transpose matriks<a class="headerlink" href="#transpose-matriks" title="Link to this heading">#</a></h1>
 <p>Transpose matriks adalah operasi yang menghasilkan matriks baru dengan menukar baris dan kolom dari matriks asalnya. Dengan kata lain, jika matriks asalnya memiliki dimensi (mxn), maka transpose-nya akan memiliki dimensi (nxm), di mana elemen-elemennya dipertukarkan antara baris dan kolom sesuai dengan posisi aslinya.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -910,7 +947,9 @@ Dapat disimpulkan bahwa C_transpose X C tidak sama dengan C X C_transpose
 </div>
 </div>
 </div>
-<p>##program untuk mengalikan matriks</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="program-untuk-mengalikan-matriks">
+<h1>program untuk mengalikan matriks<a class="headerlink" href="#program-untuk-mengalikan-matriks" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">input_matrix</span><span class="p">():</span>
@@ -997,6 +1036,7 @@ Hasil perkalian matriks:
 </div>
 </div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1034,7 +1074,7 @@ Hasil perkalian matriks:
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Menggambarkan persamaan bidang dalam 3D</p>
       </div>
     </a>
     <a class="right-next"
@@ -1042,7 +1082,7 @@ Hasil perkalian matriks:
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Invers matrik</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1061,7 +1101,15 @@ Hasil perkalian matriks:
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aljabar matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-matrik">Penjelasan Matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pada-matriks">OPERASI PADA MATRIKS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matrik">1. Penjumlahan Matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matrik">2.Pengurangan matrik</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">3.Perkalian Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transpose-matriks">4. transpose matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#program-untuk-mengalikan-matriks">program untuk mengalikan matriks</a></li>
 </ul>
 
   </nav></div>
